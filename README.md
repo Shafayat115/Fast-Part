@@ -111,7 +111,9 @@ GGDEKRAYVREAEVKQITQGDQFFTRY
 
 ## Common Errors to Avoid
 **Missing Header Lines**: Ensure each sequence has a header line starting with >.
+
 **Incorrect Separator**: Use | as the separator between fields in the header, especially for the AccessionID and Label fields.
+
 **Special Characters**: Avoid non-standard characters in the sequence data; only use valid nucleotide (A, T, C, G, N) or amino acid codes.
 
 ## Usage
