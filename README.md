@@ -29,3 +29,15 @@ Ensure that **CD-HIT**, **MMseqs2**, and **DIAMOND** are installed and accessibl
 2. Install dependencies:
    ```bash
    pip install biopython
+## Usage
+Run Fast_Part with a specified fasta_file and output_dir, along with other optional parameters. By default, the tool uses cdhit with an identity threshold of 0.8, 128 CD-HIT cores, a train ratio of 0.8 (adjusted by 5% internally), and a query coverage of 60 for DIAMOND alignment.
+
+Command-Line Arguments
+Argument	Description	Default
+--fasta_file	Input FASTA file containing sequences	Required
+--output_dir	Directory to store output files	Required
+--method	Clustering method (cdhit or mmseq)	Required
+--identity_threshold	Identity threshold for clustering	0.8
+--cdhit_cores	Number of cores for CD-HIT (only if cdhit method is used)	128
+--train_ratio	Train set ratio for splitting clusters (adjusted by 5%)	0.8
+--query_cover	Query coverage for DIAMOND alignment	60
