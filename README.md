@@ -83,6 +83,28 @@ DIAMOND is a fast sequence aligner for protein and translated DNA searches.
 2. Install dependencies:
    ```bash
    pip install biopython
+
+
+## FASTA File Formatting Requirements
+
+To use **Fast_Part** effectively, ensure that your input FASTA file follows these formatting guidelines:
+
+- **File Extension**: The input file should be in the standard FASTA format and typically have a `.fasta` or `.fa` extension.
+  
+- **Sequence Header**: Each sequence must begin with a header line starting with a `>` symbol. The header should contain information separated by pipes (`|`) in the following format:
+**AccessionID|Label|Other_Info**
+
+- **AccessionID**: A unique identifier for the sequence.
+- **Label**: The label that categorizes the sequence (e.g., resistance mechanism or organism name).
+- **Other_Info**: Optional additional information (e.g., description of the protein or sequence origin).
+
+**Example**:
+```plaintext
+>ABC123|Resistant|Bacterial Protein
+MKTIIALSYIFCLVFADYKDDDDK
+>XYZ789|Susceptible|Viral Protein
+GGDEKRAYVREAEVKQITQGDQFFTRY
+
 ## Usage
 Run Fast_Part with a specified fasta_file and output_dir, along with other optional parameters. By default, the tool uses cdhit with an identity threshold of 0.8, 128 CD-HIT cores, a train ratio of 0.8 (adjusted by 5% internally), and a query coverage of 60 for DIAMOND alignment.
 
