@@ -78,8 +78,8 @@ DIAMOND is a fast sequence aligner for protein and translated DNA searches.
 To install fast-part, you can use pip directly from your terminal:
 ```bash
 pip install fast-part
-
-
+```
+Or you can use this repository - 
 1. Clone this repository:
    ```bash
    git clone https://github.com/Shafayat115/Fast-Part.git
