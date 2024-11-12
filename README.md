@@ -44,14 +44,14 @@ Run Fast_Part with a specified fasta_file and output_dir, along with other optio
 | `--train_ratio`      | Train set ratio for splitting clusters (adjusted by 5%)     | `0.8`      |
 | `--query_cover`      | Query coverage for DIAMOND alignment                        | `60`       |
 
-## Example Commands
 
-### Example 1: Using CD-HIT with default settings
+
+## Example 1: Using CD-HIT with default settings
 
 ```bash
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit
 
-#### Example 2: Using MMseqs2 with custom identity threshold
+## Example 2: Using MMseqs2 with custom identity threshold
 
 ```bash
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method mmseq --identity_threshold 0.7
