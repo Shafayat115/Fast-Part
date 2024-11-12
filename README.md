@@ -105,6 +105,15 @@ MKTIIALSYIFCLVFADYKDDDDK
 >XYZ789|Susceptible|Viral Protein
 GGDEKRAYVREAEVKQITQGDQFFTRY
 ```
+- **Sequence Data**: The sequence should appear immediately after the header line without any blank lines in between. It should only contain standard nucleotide or protein letters (A, T, C, G for nucleotides; or standard amino acid codes for proteins).
+
+- **Consistency in Labeling**: Ensure that labels (the second field in the header) are consistent across sequences, as these labels will be used for clustering and partitioning into training and test sets.
+
+## Common Errors to Avoid
+**Missing Header Lines**: Ensure each sequence has a header line starting with >.
+**Incorrect Separator**: Use | as the separator between fields in the header, especially for the AccessionID and Label fields.
+**Special Characters**: Avoid non-standard characters in the sequence data; only use valid nucleotide (A, T, C, G, N) or amino acid codes.
+
 ## Usage
 Run Fast_Part with a specified fasta_file and output_dir, along with other optional parameters. By default, the tool uses cdhit with an identity threshold of 0.8, 128 CD-HIT cores, a train ratio of 0.8 (adjusted by 5% internally), and a query coverage of 60 for DIAMOND alignment.
 
