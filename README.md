@@ -1,6 +1,6 @@
 # Fast_Part
 
-**Fast_Part** is an efficient tool for partitioning and clustering sequences. It uses CD-HIT or MMseqs2 for clustering, along with DIAMOND for alignments, to enable streamlined handling of biological sequences, automated partitioning into training and test sets, and iterative reassignment based on DIAMOND alignments. 
+**Fast-Part** is an efficient tool for partitioning and clustering sequences. It uses CD-HIT or MMseqs2 for clustering, along with DIAMOND for alignments, to enable streamlined handling of biological sequences, automated partitioning into training and test sets, and iterative reassignment based on DIAMOND alignments. 
 
 ## Features
 
@@ -87,7 +87,7 @@ DIAMOND is a fast sequence aligner for protein and translated DNA searches.
 
 ## FASTA File Formatting Requirements
 
-To use **Fast_Part** effectively, ensure that your input FASTA file follows these formatting guidelines:
+To use **Fast-Part** effectively, ensure that your input FASTA file follows these formatting guidelines:
 
 - **File Extension**: The input file should be in the standard FASTA format and typically have a `.fasta` or `.fa` extension.
   
@@ -99,12 +99,12 @@ To use **Fast_Part** effectively, ensure that your input FASTA file follows thes
 - **Other_Info**: Optional additional information (e.g., description of the protein or sequence origin).
 
 **Example**:
-```plaintext
+```bash
 >ABC123|Resistant|Bacterial Protein
 MKTIIALSYIFCLVFADYKDDDDK
 >XYZ789|Susceptible|Viral Protein
 GGDEKRAYVREAEVKQITQGDQFFTRY
-
+```
 ## Usage
 Run Fast_Part with a specified fasta_file and output_dir, along with other optional parameters. By default, the tool uses cdhit with an identity threshold of 0.8, 128 CD-HIT cores, a train ratio of 0.8 (adjusted by 5% internally), and a query coverage of 60 for DIAMOND alignment.
 
