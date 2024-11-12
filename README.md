@@ -66,5 +66,7 @@ python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output
 ## Output Files
 
 **Train.fasta:** Contains sequences assigned to the training set.
+
 **Test.fasta:** Contains sequences assigned to the test set.
+
 **summary.txt:** A summary file with configuration details, initial and final sequence counts per label, removed sequences, missing labels, and execution time.
