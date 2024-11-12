@@ -49,7 +49,7 @@ Run Fast_Part with a specified fasta_file and output_dir, along with other optio
 ## Example 1: Using CD-HIT with default settings
 
 ```bash
-python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit
+python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit.
 
 ## Example 2: Using MMseqs2 with custom identity threshold
 
