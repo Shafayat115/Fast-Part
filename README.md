@@ -46,17 +46,17 @@ Run Fast_Part with a specified fasta_file and output_dir, along with other optio
 
 ## Example Commands
 
-### Example 1: Using CD-HIT with default settings
+## Example 1: Using CD-HIT with default settings
 ```bash
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit
-### Example 2: Using MMseqs2 with custom identity threshold
+## Example 2: Using MMseqs2 with custom identity threshold
 ```bash
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method mmseq --identity_threshold 0.7
-### Example 3: Specifying custom cores for CD-HIT
+## Example 3: Specifying custom cores for CD-HIT
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit --cdhit_cores 64
-### Example 4: Running with a custom train ratio and query cover
+## Example 4: Running with a custom train ratio and query cover
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit --train_ratio 0.85 --query_cover 70
-### Output Files
+## Output Files
 **Train.fasta:** Contains sequences assigned to the training set.
 **Test.fasta:** Contains sequences assigned to the test set.
 **summary.txt:** A summary file with configuration details, initial and final sequence counts per label, removed sequences, missing labels, and execution time.
