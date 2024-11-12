@@ -146,7 +146,7 @@ python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output
 ```bash
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit --cdhit_cores 64
 ```
-## Example 4: Running with a custom train ratio and query cover
+## Example 4: Running with a custom stratification ratio and query cover
 ```bash
 python fast_part.py --fasta_file path/to/input.fasta --output_dir path/to/output --method cdhit --train_ratio 0.85 --query_cover 70
 ```
