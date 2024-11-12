@@ -24,5 +24,5 @@ Ensure that **CD-HIT**, **MMseqs2**, and **DIAMOND** are installed and accessibl
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/Fast_Part.git
+   git clone https://github.com/Shafayat115/Fast-Part.git
    cd Fast_Part
