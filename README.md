@@ -26,3 +26,6 @@ Ensure that **CD-HIT**, **MMseqs2**, and **DIAMOND** are installed and accessibl
    ```bash
    git clone https://github.com/Shafayat115/Fast-Part.git
    cd Fast_Part
+2. Install dependencies:
+   ```bash
+   pip install biopython
