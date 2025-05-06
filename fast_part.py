@@ -204,7 +204,7 @@ def main():
         summary.write("Configuration Summary:\n")
         summary.write(f"Clustering Method: {args.method}\n")
         summary.write(f"Identity Threshold: {args.identity_threshold}\n")
-        summary.write(f"CD-HIT Cores: {args.cdhit_cores}\n")
+        summary.write(f"Cores: {args.cdhit_cores}\n")
         summary.write(f"Train Ratio (adjusted): {args.train_ratio - 0.05}\n")
         summary.write(f"Query Cover: {args.query_cover}\n\n")
 
